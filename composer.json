@@ -1,0 +1,26 @@
+{
+    "name": "yuxiaobo/docker-php-environment",
+    "description": "docker-php 环境",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Yuxiaobo\\DockerPhpEnvironment\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "余小波",
+            "email": "yuxiaobo64@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "php src/Application.php dpe:welcome"
+        ]
+    },
+    "require": {
+        "php": ">=7.2",
+        "symfony/console": "^6.4"
+    }
+}
