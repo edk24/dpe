@@ -1,7 +1,7 @@
-FROM edk24/docker-php:8.1
+FROM edk24/docker-php:{%PHP_VERSION%}
 
 # 配置文件
-COPY docker/nginx/conf/nginx.conf /etc/nginx/nginx.conf
+COPY docker/nginx/conf/ /etc/nginx/
 COPY docker/php/conf/php-fpm.conf /usr/local/etc/php-fpm.d/zz-docker.conf
 COPY docker/php/conf/php.ini /usr/local/etc/php/php.ini
 

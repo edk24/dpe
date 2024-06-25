@@ -16,7 +16,7 @@ services:
       - ./docker/php/conf/php-fpm.conf:/usr/local/etc/php-fpm.d/zz-docker.conf:ro
       - ./docker/php/conf/php.ini:/usr/local/etc/php/php.ini:ro
     ports:
-      - 3003:80
+      - 3000:80
 
 networks:
   defaults:

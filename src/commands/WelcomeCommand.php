@@ -1,12 +1,10 @@
 <?php
 
-namespace Yuxiaobo\DockerPhpEnvironment\commands;
+namespace Edk24\DockerPhpEnvironment\commands;
 
 use Symfony\Component\Console\Command\Command;
-use Symfony\Component\Console\Helper\TableSeparator;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Question\ChoiceQuestion;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
 class WelcomeCommand extends Command

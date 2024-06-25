@@ -1,11 +1,11 @@
 {
-    "name": "yuxiaobo/docker-php-environment",
+    "name": "edk24/dpe",
     "description": "docker-php 环境",
     "type": "library",
     "license": "mit",
     "autoload": {
         "psr-4": {
-            "Yuxiaobo\\DockerPhpEnvironment\\": "src/"
+            "Edk24\\DockerPhpEnvironment\\": "src/"
         }
     },
     "authors": [
@@ -16,11 +16,11 @@
     ],
     "scripts": {
         "post-install-cmd": [
-            "php src/Application.php dpe:welcome"
+            "php vendor/bin/dpe init"
         ]
     },
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.1",
         "symfony/console": "^6.4"
     }
 }
