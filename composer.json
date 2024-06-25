@@ -19,7 +19,7 @@
             "php vendor/bin/dpe init"
         ]
     },
-    "bin": ["dep"],
+    "bin": ["dpe"],
     "require": {
         "php": ">=7.1",
         "symfony/console": "^6.4"
